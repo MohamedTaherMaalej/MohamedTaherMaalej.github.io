@@ -49,7 +49,7 @@ export default function HeroSection() {
             </p>
             <div className="mt-6">
                 <a className="group bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-lg mr-2 inline-flex items-center"
-                    href="https://drive.google.com/file/d/18OWIny1K929tNzhOLSLdamgj3Qtqomle/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    href="https://drive.google.com/file/d/1aLtARtU-bipKEgSrHrXos1PV6pNgZUoH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     Resume
                     <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" />
                 </a>
