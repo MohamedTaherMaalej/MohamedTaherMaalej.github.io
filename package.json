@@ -1,19 +1,21 @@
 {
   "name": "mohamedtahermaalej.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Mohamed Taher MAALEJ - ICT & Cyber Security Engineer Portfolio",
+  "author": "Mohamed Taher MAALEJ",
   "private": true,
   "homepage": "https://MohamedTaherMaalej.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy:dev": "NEXT_PUBLIC_ENV=dev next build && gh-pages -d out -b gh-pages-dev",
-    "deploy:staging": "NEXT_PUBLIC_ENV=staging next build && gh-pages -d out -b gh-pages-staging",
-    "deploy:prod": "next build && gh-pages -d out -b gh-pages",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && gh-pages -d out",
+    "deploy:prod": "next build && gh-pages -d out -b main",
+    "clean": "rm -rf .next out node_modules",
+    "reinstall": "npm run clean && npm install"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
     "lenis": "^1.3.17",
     "lucide-react": "^0.562.0",
     "next": "^16.1.1",
@@ -23,12 +25,16 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.18",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "gh-pages": "^6.3.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }
 }
