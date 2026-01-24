@@ -10,8 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && gh-pages -d out",
-    "deploy:prod": "next build && gh-pages -d out -b main",
+    "deploy": "npm run build && gh-pages -d out -b gh-pages",
     "clean": "rm -rf .next out node_modules",
     "reinstall": "npm run clean && npm install"
   },
